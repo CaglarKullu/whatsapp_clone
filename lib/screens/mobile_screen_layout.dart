@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:whatsapp_clone/consts/color.dart';
+
+import 'package:whatsapp_clone/widgets/contact_list/contacts_list.dart';
+import 'package:whatsapp_clone/widgets/utilities/consts/color.dart';
 
 class MobileScreenLayout extends StatelessWidget {
   const MobileScreenLayout({Key? key}) : super(key: key);
@@ -57,6 +56,7 @@ class MobileScreenLayout extends StatelessWidget {
                   ),
                 ]),
           ),
+          body: const ContactsList(),
         ));
   }
 }
